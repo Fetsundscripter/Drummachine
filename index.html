@@ -10,6 +10,7 @@
     <title>Drum Machine</title>
      <script>
       function play(str) {
+        document.getElementById('display').innerHTML = str;
         var audio = document.getElementById(str);
         audio.play();
       }
@@ -41,9 +42,9 @@
   <body>
     <div class="container" id="drum-machine">
     <h1 class="text-center">Drum Machine</h1>
-    <div class="card">
+    <div class="card my-3">
       <div class="card-body">
-        <div id="display"></div>
+        <div class="text-center" id="display">Nothing yet to display</div>
       </div>
     </div>
     <button class="drum-pad btn btn-primary" onclick="play('Q')" id="drum-0">
